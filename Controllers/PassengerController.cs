@@ -25,13 +25,29 @@ public class PassengersController : ControllerBase
         var passenger = await _context.Passengers.FindAsync(id);
         return Ok(passenger); // Vulnerability: verbose errors if null (#7)
     }
-
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] Passenger passenger)
     {
-        _context.Passengers.Add(passenger); // Vulnerability: overposting (#5)
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        // Prevent overposting
+        var newPassenger = new Passenger
+        {
+            FullName = passenger.FullName?.Trim(),
+            PassportNumber = passenger.PassportNumber?.Trim(),
+            VisaType = passenger.VisaType?.Trim(),
+            Nationality = passenger.Nationality?.Trim(),
+            ArrivalDate = passenger.ArrivalDate, // DateOnly type
+            ArrivalYear = passenger.ArrivalYear,
+            PurposeOfVisit = passenger.PurposeOfVisit?.Trim(),
+            OfficerId = passenger.OfficerId
+        };
+
+        _context.Passengers.Add(newPassenger);
         await _context.SaveChangesAsync();
-        return Ok(passenger);
+
+        return Ok(newPassenger);
     }
 
     [HttpPut("{id}")]
