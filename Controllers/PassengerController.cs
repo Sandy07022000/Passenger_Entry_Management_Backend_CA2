@@ -1,9 +1,10 @@
-
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize] // Require valid token for all actions
 public class PassengersController : ControllerBase
 {
     private readonly MyDbContext _context;
@@ -13,56 +14,57 @@ public class PassengersController : ControllerBase
         _context = context;
     }
 
+    //(Admin + User) can read
     [HttpGet]
+    [Authorize(Roles = "Admin,User")]
     public async Task<IActionResult> GetAll()
     {
         return Ok(await _context.Passengers.ToListAsync());
     }
 
     [HttpGet("{id}")]
+    [Authorize(Roles = "Admin,User")]
     public async Task<IActionResult> Get(int id)
     {
         var passenger = await _context.Passengers.FindAsync(id);
-        return Ok(passenger); // Vulnerability: verbose errors if null (#7)
+        if (passenger == null)
+            return NotFound();
+        return Ok(passenger);
     }
+
+    //Admin only: Create
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Create([FromBody] Passenger passenger)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        // Prevent overposting
-        var newPassenger = new Passenger
-        {
-            FullName = passenger.FullName?.Trim(),
-            PassportNumber = passenger.PassportNumber?.Trim(),
-            VisaType = passenger.VisaType?.Trim(),
-            Nationality = passenger.Nationality?.Trim(),
-            ArrivalDate = passenger.ArrivalDate, // DateOnly type
-            ArrivalYear = passenger.ArrivalYear,
-            PurposeOfVisit = passenger.PurposeOfVisit?.Trim(),
-            OfficerId = passenger.OfficerId
-        };
-
-        _context.Passengers.Add(newPassenger);
+        _context.Passengers.Add(passenger);
         await _context.SaveChangesAsync();
-
-        return Ok(newPassenger);
+        return Ok(passenger);
     }
 
+    // Admin only: Update
     [HttpPut("{id}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Update(int id, [FromBody] Passenger passenger)
     {
-        passenger.PassengerId = id; // Overwriting ID / sensitive fields (#5)
+        passenger.PassengerId = id;
         _context.Passengers.Update(passenger);
         await _context.SaveChangesAsync();
         return Ok(passenger);
     }
 
+    // Admin only: Delete
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(int id)
     {
         var passenger = await _context.Passengers.FindAsync(id);
+        if (passenger == null)
+            return NotFound();
+
         _context.Passengers.Remove(passenger);
         await _context.SaveChangesAsync();
         return Ok();

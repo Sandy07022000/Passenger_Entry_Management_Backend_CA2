@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-// Add this using directive for Pomelo.EntityFrameworkCore.MySql
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,10 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add controllers
 builder.Services.AddControllers();
 
-// Insecure CORS
+// Secure CORS policy
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("InsecureCORS", cors =>
+    options.AddPolicy("SecureCORS", cors =>
     {
         cors.WithOrigins("http://localhost:4200")
             .AllowAnyHeader()
@@ -19,23 +21,39 @@ builder.Services.AddCors(options =>
 });
 
 // EF Core MySQL connection
-// Register DbContext with MySQL
 builder.Services.AddDbContext<MyDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
     ));
 
-builder.Services.AddControllers()
-    .AddJsonOptions(options =>
+// Add JWT authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
     {
-        options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        };
     });
+
+builder.Services.AddAuthorization();
+builder.Services.AddControllers().AddJsonOptions(o =>
+{
+    o.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+});
 
 var app = builder.Build();
 
-// Use CORS
-app.UseCors("InsecureCORS");
+app.UseCors("SecureCORS");
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();

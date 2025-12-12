@@ -9,4 +9,6 @@ public class MyDbContext : DbContext
     }
 
     public DbSet<Passenger> Passengers { get; set; } // Full Passenger model
+
+    public DbSet<User> Users { get; set; } // table for authentication
 }
