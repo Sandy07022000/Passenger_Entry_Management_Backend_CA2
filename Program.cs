@@ -1,20 +1,24 @@
 using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add controllers
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+    });
 
-// Secure CORS policy
+// Restrictive and correct CORS policy (allow HTTPS frontend)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("SecureCORS", cors =>
     {
-        cors.WithOrigins("http://localhost:4200")
+        cors.WithOrigins("https://localhost:4200")  // HTTPS Angular dev origin
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
@@ -27,31 +31,48 @@ builder.Services.AddDbContext<MyDbContext>(options =>
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
     ));
 
-// Add JWT authentication
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-        };
-    });
-
-builder.Services.AddAuthorization();
-builder.Services.AddControllers().AddJsonOptions(o =>
+// --- Cryptographic Hardening ---
+// Validate JWT key strength
+var jwtKey = builder.Configuration["Jwt:Key"]
+             ?? throw new InvalidOperationException("JWT Key missing!");
+var keyBytes = Encoding.UTF8.GetBytes(jwtKey);
+if (keyBytes.Length < 32)
 {
-    o.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+    throw new InvalidOperationException("JWT key must be at least 256 bits (32 bytes).");
+}
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = true; // force HTTPS for token validation
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(keyBytes)
+    };
 });
 
 var app = builder.Build();
 
+// Use HTTPS redirection
+app.UseHttpsRedirection();
+
+// Global error handling (hide stack traces)
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/error");
+}
+
+// Use the secure CORS policy
 app.UseCors("SecureCORS");
 app.UseAuthentication();
 app.UseAuthorization();
