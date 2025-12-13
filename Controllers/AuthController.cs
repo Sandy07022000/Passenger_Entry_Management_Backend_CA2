@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -23,7 +24,10 @@ public class AuthController : ControllerBase
     public async Task<IActionResult> Register([FromBody] User user)
     {
         if (await _context.Users.AnyAsync(u => u.Username == user.Username))
+        {
+            Log.Warning("Registration attempt failed: Username {Username} already exists", user.Username);
             return BadRequest("Username already exists.");
+        }
 
         string hashedPassword = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
         user.PasswordHash = hashedPassword;
@@ -32,6 +36,7 @@ public class AuthController : ControllerBase
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
 
+        Log.Information("New user registered: {Username}, Role: {Role}", user.Username, user.Role);
         return Ok("User registered successfully.");
     }
 
@@ -40,22 +45,30 @@ public class AuthController : ControllerBase
         public string Username { get; set; }
         public string Password { get; set; }
     }
-
+    
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginRequest login)
     {
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == login.Username);
         if (user == null)
+        {
+            Log.Warning("Login failed: Invalid username {Username}", login.Username);
             return BadRequest("Invalid username or password.");
+        }
 
-        // Verify password using BCrypt
         bool valid = BCrypt.Net.BCrypt.Verify(login.Password, user.PasswordHash);
         if (!valid)
+        {
+            Log.Warning("Login failed: Incorrect password for username {Username}", login.Username);
             return BadRequest("Invalid username or password.");
+        }
 
         var token = GenerateJwtToken(user);
+        Log.Information("User logged in successfully: {Username}", login.Username);
+
         return Ok(new { token });
     }
+
 
     private string GenerateJwtToken(User user)
     {

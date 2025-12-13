@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -42,6 +43,8 @@ public class PassengersController : ControllerBase
 
         _context.Passengers.Add(passenger);
         await _context.SaveChangesAsync();
+
+        Log.Information("Passenger created: {PassengerId}, FullName: {FullName}", passenger.PassengerId, passenger.FullName);
         return Ok(passenger);
     }
 
@@ -53,6 +56,8 @@ public class PassengersController : ControllerBase
         passenger.PassengerId = id;
         _context.Passengers.Update(passenger);
         await _context.SaveChangesAsync();
+
+        Log.Information("Passenger updated: {PassengerId}, FullName: {FullName}", passenger.PassengerId, passenger.FullName);
         return Ok(passenger);
     }
 
@@ -67,6 +72,7 @@ public class PassengersController : ControllerBase
 
         _context.Passengers.Remove(passenger);
         await _context.SaveChangesAsync();
+        Log.Information("Passenger deleted: {PassengerId}, FullName: {FullName}", passenger.PassengerId, passenger.FullName);
         return Ok();
     }
 }
