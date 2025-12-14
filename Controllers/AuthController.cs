@@ -1,4 +1,5 @@
 ﻿using BCrypt.Net;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -67,6 +68,25 @@ public class AuthController : ControllerBase
         Log.Information("User logged in successfully: {Username}", login.Username);
 
         return Ok(new { token });
+    }
+
+    [HttpPost("reauth")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> ReAuthenticate([FromBody] LoginRequest request)
+    {
+        var username = User.Identity?.Name;
+        if (string.IsNullOrEmpty(username))
+            return Unauthorized();
+
+        var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == username && u.Role == "Admin");
+        if (user == null)
+            return Unauthorized();
+
+        bool valid = BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash);
+        if (!valid)
+            return Unauthorized();
+
+        return Ok(true);
     }
 
 

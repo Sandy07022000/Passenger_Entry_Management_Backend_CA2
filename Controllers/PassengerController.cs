@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using System.Security.Claims;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -13,6 +14,14 @@ public class PassengersController : ControllerBase
     public PassengersController(MyDbContext context)
     {
         _context = context;
+    }
+
+    // --- Helper method for re-authentication ---
+    private async Task<bool> ReAuthenticateAdmin(string username)
+    {
+        var admin = await _context.Users.FirstOrDefaultAsync(u => u.Username == username && u.Role == "Admin");
+        if (admin == null) return false;
+        return true;
     }
 
     //(Admin + User) can read
@@ -41,6 +50,11 @@ public class PassengersController : ControllerBase
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
+        // --- Re-authentication check ---
+        var username = User.FindFirstValue(ClaimTypes.Name);
+        if (!await ReAuthenticateAdmin(username))
+            return Unauthorized("Admin re-authentication failed.");
+
         _context.Passengers.Add(passenger);
         await _context.SaveChangesAsync();
 
@@ -54,6 +68,11 @@ public class PassengersController : ControllerBase
     public async Task<IActionResult> Update(int id, [FromBody] Passenger passenger)
     {
         passenger.PassengerId = id;
+
+        var username = User.FindFirstValue(ClaimTypes.Name);
+        if (!await ReAuthenticateAdmin(username))
+            return Unauthorized("Admin re-authentication failed.");
+
         _context.Passengers.Update(passenger);
         await _context.SaveChangesAsync();
 
@@ -66,6 +85,10 @@ public class PassengersController : ControllerBase
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(int id)
     {
+        var username = User.FindFirstValue(ClaimTypes.Name);
+        if (!await ReAuthenticateAdmin(username))
+            return Unauthorized("Admin re-authentication failed.");
+
         var passenger = await _context.Passengers.FindAsync(id);
         if (passenger == null)
             return NotFound();
