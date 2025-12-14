@@ -99,7 +99,7 @@ public class AuthController : ControllerBase
         };
 
         // --- Cryptographic Hardening ---
-        var jwtKey = _config["Jwt:Key"]
+        var jwtKey = Environment.GetEnvironmentVariable("JWT_KEY")
                      ?? throw new InvalidOperationException("JWT Key missing!");
         var keyBytes = Encoding.UTF8.GetBytes(jwtKey);
         if (keyBytes.Length < 32)

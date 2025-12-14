@@ -4091,3 +4091,665 @@ LIMIT 1
 2025-12-14 02:18:32.169 +00:00 [INF] Executed action PassengersController.Get (Secure Web CA2) in 54.7968ms
 2025-12-14 02:18:32.176 +00:00 [INF] Executed endpoint 'PassengersController.Get (Secure Web CA2)'
 2025-12-14 02:18:32.182 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers/38 - 200 null application/json; charset=utf-8 114.0402ms
+2025-12-14 17:02:02.866 +00:00 [INF] User profile is available. Using 'C:\Users\Sandeep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-14 17:02:03.090 +00:00 [INF] Now listening on: https://localhost:7255
+2025-12-14 17:02:03.092 +00:00 [INF] Now listening on: http://localhost:5123
+2025-12-14 17:02:03.152 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-14 17:02:03.153 +00:00 [INF] Hosting environment: Development
+2025-12-14 17:02:03.155 +00:00 [INF] Content root path: C:\Users\Sandeep\source\repos\Secure Web CA2
+2025-12-14 17:02:03.966 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/swagger - null null
+2025-12-14 17:02:04.499 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/swagger - 404 0 null 545.0554ms
+2025-12-14 17:02:04.521 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7255/swagger, Response status code: 404
+2025-12-14 17:02:25.560 +00:00 [INF] User profile is available. Using 'C:\Users\Sandeep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-14 17:02:26.029 +00:00 [INF] Now listening on: https://localhost:7255
+2025-12-14 17:02:26.033 +00:00 [INF] Now listening on: http://localhost:5123
+2025-12-14 17:02:26.198 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-14 17:02:26.201 +00:00 [INF] Hosting environment: Development
+2025-12-14 17:02:26.203 +00:00 [INF] Content root path: C:\Users\Sandeep\source\repos\Secure Web CA2
+2025-12-14 17:02:27.024 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/swagger - null null
+2025-12-14 17:02:27.490 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/swagger - 404 0 null 479.1751ms
+2025-12-14 17:02:27.505 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7255/swagger, Response status code: 404
+2025-12-14 17:03:44.251 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/auth/login - null null
+2025-12-14 17:03:44.278 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:03:44.286 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/auth/login - 204 null null 37.9407ms
+2025-12-14 17:03:44.293 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/auth/login - application/json 42
+2025-12-14 17:03:44.315 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:03:44.333 +00:00 [INF] Executing endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:03:44.383 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthController (Secure Web CA2).
+2025-12-14 17:06:02.468 +00:00 [INF] User profile is available. Using 'C:\Users\Sandeep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-14 17:06:02.973 +00:00 [INF] Now listening on: https://localhost:7255
+2025-12-14 17:06:02.977 +00:00 [INF] Now listening on: http://localhost:5123
+2025-12-14 17:06:03.169 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-14 17:06:03.172 +00:00 [INF] Hosting environment: Development
+2025-12-14 17:06:03.175 +00:00 [INF] Content root path: C:\Users\Sandeep\source\repos\Secure Web CA2
+2025-12-14 17:06:03.940 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/swagger - null null
+2025-12-14 17:06:05.071 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/swagger - 404 0 null 1169.9538ms
+2025-12-14 17:06:05.285 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7255/swagger, Response status code: 404
+2025-12-14 17:06:28.540 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/auth/login - null null
+2025-12-14 17:06:28.559 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:06:28.566 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/auth/login - 204 null null 26.2349ms
+2025-12-14 17:06:28.570 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/auth/login - application/json 42
+2025-12-14 17:06:28.588 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:06:28.598 +00:00 [INF] Executing endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:06:28.655 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthController (Secure Web CA2).
+2025-12-14 17:06:33.123 +00:00 [INF] Executed DbCommand (35ms) [Parameters=[@__login_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__login_Username_0
+LIMIT 1
+2025-12-14 17:06:33.836 +00:00 [INF] User logged in successfully: admin
+2025-12-14 17:06:33.857 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-14 17:06:33.898 +00:00 [INF] Executed action AuthController.Login (Secure Web CA2) in 5233.3147ms
+2025-12-14 17:06:33.903 +00:00 [INF] Executed endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:06:33.918 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/auth/login - 200 null application/json; charset=utf-8 5348.1105ms
+2025-12-14 17:07:02.483 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/auth/login - null null
+2025-12-14 17:07:02.488 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:02.490 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/auth/login - 204 null null 7.2041ms
+2025-12-14 17:07:02.504 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/auth/login - application/json 42
+2025-12-14 17:07:02.514 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:02.617 +00:00 [INF] Executing endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:07:02.627 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthController (Secure Web CA2).
+2025-12-14 17:07:04.882 +00:00 [INF] Executed DbCommand (7ms) [Parameters=[@__login_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__login_Username_0
+LIMIT 1
+2025-12-14 17:07:05.368 +00:00 [INF] User logged in successfully: admin
+2025-12-14 17:07:05.372 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-14 17:07:05.376 +00:00 [INF] Executed action AuthController.Login (Secure Web CA2) in 2745.8753ms
+2025-12-14 17:07:05.378 +00:00 [INF] Executed endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:07:05.381 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/auth/login - 200 null application/json; charset=utf-8 2876.9243ms
+2025-12-14 17:07:05.395 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:07:05.402 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:05.405 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 10.4852ms
+2025-12-14 17:07:05.410 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/passengers - application/json 181
+2025-12-14 17:07:05.424 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:05.436 +00:00 [INF] Executing endpoint 'PassengersController.Create (Secure Web CA2)'
+2025-12-14 17:07:05.444 +00:00 [INF] Route matched with {action = "Create", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Passenger) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:07:07.162 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE (`u`.`Username` = @__username_0) AND (`u`.`Role` = 'Admin')
+LIMIT 1
+2025-12-14 17:07:07.315 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Date), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Passengers` (`ArrivalDate`, `ArrivalYear`, `FullName`, `Nationality`, `OfficerId`, `PassportNumber`, `PurposeOfVisit`, `VisaType`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT `PassengerId`
+FROM `Passengers`
+WHERE ROW_COUNT() = 1 AND `PassengerId` = LAST_INSERT_ID();
+2025-12-14 17:07:07.350 +00:00 [INF] Passenger created: 40, FullName: balu gundameedi
+2025-12-14 17:07:07.353 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:07:07.358 +00:00 [INF] Executed action PassengersController.Create (Secure Web CA2) in 1910.199ms
+2025-12-14 17:07:07.360 +00:00 [INF] Executed endpoint 'PassengersController.Create (Secure Web CA2)'
+2025-12-14 17:07:07.361 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 1951.6064ms
+2025-12-14 17:07:13.066 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:07:13.075 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:13.078 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 10.9311ms
+2025-12-14 17:07:13.083 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers - null null
+2025-12-14 17:07:13.098 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:13.103 +00:00 [INF] Executing endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:07:13.114 +00:00 [INF] Route matched with {action = "GetAll", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PassengersController (Secure Web CA2).
+2025-12-14 17:07:15.320 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+2025-12-14 17:07:15.323 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Passenger, Secure Web CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-14 17:07:15.327 +00:00 [INF] Executed action PassengersController.GetAll (Secure Web CA2) in 2207.2259ms
+2025-12-14 17:07:15.329 +00:00 [INF] Executed endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:07:15.330 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 2247.2179ms
+2025-12-14 17:07:26.766 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers/20 - null null
+2025-12-14 17:07:26.785 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:26.787 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers/20 - 204 null null 21.5781ms
+2025-12-14 17:07:26.791 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers/20 - null null
+2025-12-14 17:07:26.807 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:26.812 +00:00 [INF] Executing endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:07:26.825 +00:00 [INF] Route matched with {action = "Get", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:07:28.942 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:07:28.945 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:07:28.946 +00:00 [INF] Executed action PassengersController.Get (Secure Web CA2) in 2117.6677ms
+2025-12-14 17:07:28.947 +00:00 [INF] Executed endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:07:28.949 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers/20 - 200 null application/json; charset=utf-8 2157.2012ms
+2025-12-14 17:07:35.329 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:07:35.351 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:35.353 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 23.2824ms
+2025-12-14 17:07:35.356 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers - null null
+2025-12-14 17:07:35.388 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:35.390 +00:00 [INF] Executing endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:07:35.392 +00:00 [INF] Route matched with {action = "GetAll", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PassengersController (Secure Web CA2).
+2025-12-14 17:07:38.145 +00:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+2025-12-14 17:07:38.152 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Passenger, Secure Web CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-14 17:07:38.154 +00:00 [INF] Executed action PassengersController.GetAll (Secure Web CA2) in 2749.7395ms
+2025-12-14 17:07:38.155 +00:00 [INF] Executed endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:07:38.156 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 2800.5077ms
+2025-12-14 17:07:56.531 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/auth/login - null null
+2025-12-14 17:07:56.551 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:56.554 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/auth/login - 204 null null 22.7761ms
+2025-12-14 17:07:56.561 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/auth/login - application/json 42
+2025-12-14 17:07:56.569 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:56.572 +00:00 [INF] Executing endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:07:56.574 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthController (Secure Web CA2).
+2025-12-14 17:07:58.641 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__login_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__login_Username_0
+LIMIT 1
+2025-12-14 17:07:58.870 +00:00 [INF] User logged in successfully: admin
+2025-12-14 17:07:58.871 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-14 17:07:58.873 +00:00 [INF] Executed action AuthController.Login (Secure Web CA2) in 2294.1279ms
+2025-12-14 17:07:58.874 +00:00 [INF] Executed endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:07:58.877 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/auth/login - 200 null application/json; charset=utf-8 2320.5193ms
+2025-12-14 17:07:58.890 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers/40 - null null
+2025-12-14 17:07:58.899 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:58.900 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers/40 - 204 null null 9.9285ms
+2025-12-14 17:07:58.904 +00:00 [INF] Request starting HTTP/2 DELETE https://localhost:7255/api/passengers/40 - null null
+2025-12-14 17:07:58.932 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:07:58.934 +00:00 [INF] Executing endpoint 'PassengersController.Delete (Secure Web CA2)'
+2025-12-14 17:07:58.946 +00:00 [INF] Route matched with {action = "Delete", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:08:00.157 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE (`u`.`Username` = @__username_0) AND (`u`.`Role` = 'Admin')
+LIMIT 1
+2025-12-14 17:08:00.161 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:08:00.175 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+DELETE FROM `Passengers`
+WHERE `PassengerId` = @p0;
+SELECT ROW_COUNT();
+2025-12-14 17:08:00.180 +00:00 [INF] Passenger deleted: 40, FullName: balu gundameedi
+2025-12-14 17:08:00.189 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-12-14 17:08:00.191 +00:00 [INF] Executed action PassengersController.Delete (Secure Web CA2) in 1240.5695ms
+2025-12-14 17:08:00.194 +00:00 [INF] Executed endpoint 'PassengersController.Delete (Secure Web CA2)'
+2025-12-14 17:08:00.197 +00:00 [INF] Request finished HTTP/2 DELETE https://localhost:7255/api/passengers/40 - 200 0 null 1293.4948ms
+2025-12-14 17:08:04.814 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:08:04.829 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:04.832 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 18.1584ms
+2025-12-14 17:08:04.835 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers - null null
+2025-12-14 17:08:04.853 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:04.855 +00:00 [INF] Executing endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:08:04.857 +00:00 [INF] Route matched with {action = "GetAll", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PassengersController (Secure Web CA2).
+2025-12-14 17:08:06.573 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+2025-12-14 17:08:06.579 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Passenger, Secure Web CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-14 17:08:06.580 +00:00 [INF] Executed action PassengersController.GetAll (Secure Web CA2) in 1719.2736ms
+2025-12-14 17:08:06.580 +00:00 [INF] Executed endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:08:06.581 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 1745.4942ms
+2025-12-14 17:08:16.251 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers/38 - null null
+2025-12-14 17:08:16.255 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:16.257 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers/38 - 204 null null 5.5805ms
+2025-12-14 17:08:16.262 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers/38 - null null
+2025-12-14 17:08:16.272 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:16.274 +00:00 [INF] Executing endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:08:16.278 +00:00 [INF] Route matched with {action = "Get", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:08:18.177 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:08:18.179 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:08:18.180 +00:00 [INF] Executed action PassengersController.Get (Secure Web CA2) in 1897.2775ms
+2025-12-14 17:08:18.201 +00:00 [INF] Executed endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:08:18.213 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers/38 - 200 null application/json; charset=utf-8 1951.2938ms
+2025-12-14 17:08:21.026 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers/38 - null null
+2025-12-14 17:08:21.030 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:21.032 +00:00 [INF] Executing endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:08:21.035 +00:00 [INF] Route matched with {action = "Get", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:08:23.673 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:08:23.676 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:08:23.677 +00:00 [INF] Executed action PassengersController.Get (Secure Web CA2) in 2639.5842ms
+2025-12-14 17:08:23.683 +00:00 [INF] Executed endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:08:23.685 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers/38 - 200 null application/json; charset=utf-8 2659.0425ms
+2025-12-14 17:08:36.417 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/auth/login - null null
+2025-12-14 17:08:36.421 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:36.423 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/auth/login - 204 null null 6.9637ms
+2025-12-14 17:08:36.426 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/auth/login - application/json 42
+2025-12-14 17:08:36.450 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:36.452 +00:00 [INF] Executing endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:08:36.454 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthController (Secure Web CA2).
+2025-12-14 17:08:38.412 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__login_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__login_Username_0
+LIMIT 1
+2025-12-14 17:08:38.624 +00:00 [INF] User logged in successfully: admin
+2025-12-14 17:08:38.625 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-14 17:08:38.628 +00:00 [INF] Executed action AuthController.Login (Secure Web CA2) in 2171.1072ms
+2025-12-14 17:08:38.630 +00:00 [INF] Executed endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:08:38.632 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/auth/login - 200 null application/json; charset=utf-8 2207.4139ms
+2025-12-14 17:08:38.647 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers/38 - null null
+2025-12-14 17:08:38.654 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:38.656 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers/38 - 204 null null 9.7249ms
+2025-12-14 17:08:38.661 +00:00 [INF] Request starting HTTP/2 PUT https://localhost:7255/api/passengers/38 - application/json 175
+2025-12-14 17:08:38.671 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:38.673 +00:00 [INF] Executing endpoint 'PassengersController.Update (Secure Web CA2)'
+2025-12-14 17:08:38.683 +00:00 [INF] Route matched with {action = "Update", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Passenger) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:08:40.274 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE (`u`.`Username` = @__username_0) AND (`u`.`Role` = 'Admin')
+LIMIT 1
+2025-12-14 17:08:40.287 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[@p8='?' (DbType = Int32), @p0='?' (DbType = Date), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Passengers` SET `ArrivalDate` = @p0, `ArrivalYear` = @p1, `FullName` = @p2, `Nationality` = @p3, `OfficerId` = @p4, `PassportNumber` = @p5, `PurposeOfVisit` = @p6, `VisaType` = @p7
+WHERE `PassengerId` = @p8;
+SELECT ROW_COUNT();
+2025-12-14 17:08:40.288 +00:00 [INF] Passenger updated: 38, FullName: vaishnavi
+2025-12-14 17:08:40.290 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:08:40.290 +00:00 [INF] Executed action PassengersController.Update (Secure Web CA2) in 1601.9034ms
+2025-12-14 17:08:40.291 +00:00 [INF] Executed endpoint 'PassengersController.Update (Secure Web CA2)'
+2025-12-14 17:08:40.293 +00:00 [INF] Request finished HTTP/2 PUT https://localhost:7255/api/passengers/38 - 200 null application/json; charset=utf-8 1633.2839ms
+2025-12-14 17:08:43.688 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers/38 - null null
+2025-12-14 17:08:43.696 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:43.703 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers/38 - 204 null null 14.5412ms
+2025-12-14 17:08:43.708 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers/38 - null null
+2025-12-14 17:08:43.749 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:43.751 +00:00 [INF] Executing endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:08:43.773 +00:00 [INF] Route matched with {action = "Get", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:08:45.537 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:08:45.554 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:08:45.557 +00:00 [INF] Executed action PassengersController.Get (Secure Web CA2) in 1779.3149ms
+2025-12-14 17:08:45.562 +00:00 [INF] Executed endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:08:45.564 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers/38 - 200 null application/json; charset=utf-8 1855.9105ms
+2025-12-14 17:08:51.476 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:08:51.481 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:51.483 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 6.3596ms
+2025-12-14 17:08:51.485 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers - null null
+2025-12-14 17:08:51.493 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:51.494 +00:00 [INF] Executing endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:08:51.496 +00:00 [INF] Route matched with {action = "GetAll", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PassengersController (Secure Web CA2).
+2025-12-14 17:08:53.280 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+2025-12-14 17:08:53.283 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Passenger, Secure Web CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-14 17:08:53.284 +00:00 [INF] Executed action PassengersController.GetAll (Secure Web CA2) in 1786.3459ms
+2025-12-14 17:08:53.289 +00:00 [INF] Executed endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:08:53.292 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 1806.8752ms
+2025-12-14 17:08:59.844 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:08:59.848 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:59.849 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 6.2342ms
+2025-12-14 17:08:59.852 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers - null null
+2025-12-14 17:08:59.863 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:08:59.866 +00:00 [INF] Executing endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:08:59.868 +00:00 [INF] Route matched with {action = "GetAll", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PassengersController (Secure Web CA2).
+2025-12-14 17:09:01.737 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+2025-12-14 17:09:01.739 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Passenger, Secure Web CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-14 17:09:01.740 +00:00 [INF] Executed action PassengersController.GetAll (Secure Web CA2) in 1868.3285ms
+2025-12-14 17:09:01.757 +00:00 [INF] Executed endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:09:01.759 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 1907.6338ms
+2025-12-14 17:09:14.885 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/auth/login - null null
+2025-12-14 17:09:14.916 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:09:14.917 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/auth/login - 204 null null 32.3231ms
+2025-12-14 17:09:14.920 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/auth/login - application/json 40
+2025-12-14 17:09:14.929 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:09:14.931 +00:00 [INF] Executing endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:09:14.933 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthController (Secure Web CA2).
+2025-12-14 17:09:17.049 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__login_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__login_Username_0
+LIMIT 1
+2025-12-14 17:09:17.262 +00:00 [INF] User logged in successfully: user
+2025-12-14 17:09:17.264 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-14 17:09:17.267 +00:00 [INF] Executed action AuthController.Login (Secure Web CA2) in 2330.6309ms
+2025-12-14 17:09:17.269 +00:00 [INF] Executed endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:09:17.271 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/auth/login - 200 null application/json; charset=utf-8 2351.4467ms
+2025-12-14 17:09:20.473 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:09:20.480 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:09:20.481 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 8.5884ms
+2025-12-14 17:09:20.484 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers - null null
+2025-12-14 17:09:20.493 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:09:20.496 +00:00 [INF] Executing endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:09:20.499 +00:00 [INF] Route matched with {action = "GetAll", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PassengersController (Secure Web CA2).
+2025-12-14 17:09:22.223 +00:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+2025-12-14 17:09:22.234 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Passenger, Secure Web CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-14 17:09:22.237 +00:00 [INF] Executed action PassengersController.GetAll (Secure Web CA2) in 1735.4008ms
+2025-12-14 17:09:22.243 +00:00 [INF] Executed endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:09:22.247 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 1762.5027ms
+2025-12-14 17:09:31.387 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers/38 - null null
+2025-12-14 17:09:32.398 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:09:32.401 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers/38 - 204 null null 1014.3557ms
+2025-12-14 17:09:32.405 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers/38 - null null
+2025-12-14 17:09:32.774 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:09:32.778 +00:00 [INF] Executing endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:09:32.780 +00:00 [INF] Route matched with {action = "Get", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:09:34.771 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:09:34.774 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:09:34.775 +00:00 [INF] Executed action PassengersController.Get (Secure Web CA2) in 1987.0771ms
+2025-12-14 17:09:34.785 +00:00 [INF] Executed endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:09:34.789 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers/38 - 200 null application/json; charset=utf-8 2384.5993ms
+2025-12-14 17:33:17.927 +00:00 [INF] User profile is available. Using 'C:\Users\Sandeep\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-14 17:33:18.249 +00:00 [INF] Now listening on: https://localhost:7255
+2025-12-14 17:33:18.251 +00:00 [INF] Now listening on: http://localhost:5123
+2025-12-14 17:33:18.405 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-14 17:33:18.409 +00:00 [INF] Hosting environment: Development
+2025-12-14 17:33:18.411 +00:00 [INF] Content root path: C:\Users\Sandeep\source\repos\Secure Web CA2
+2025-12-14 17:33:19.003 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/swagger - null null
+2025-12-14 17:33:19.456 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/swagger - 404 0 null 474.4302ms
+2025-12-14 17:33:19.480 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7255/swagger, Response status code: 404
+2025-12-14 17:34:12.540 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/auth/login - null null
+2025-12-14 17:34:12.561 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:34:12.565 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/auth/login - 204 null null 24.9362ms
+2025-12-14 17:34:12.567 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/auth/login - application/json 42
+2025-12-14 17:34:12.575 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:34:12.588 +00:00 [INF] Executing endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:34:12.616 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthController (Secure Web CA2).
+2025-12-14 17:34:14.714 +00:00 [INF] Executed DbCommand (72ms) [Parameters=[@__login_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__login_Username_0
+LIMIT 1
+2025-12-14 17:34:19.023 +00:00 [INF] User logged in successfully: admin
+2025-12-14 17:34:19.042 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-14 17:34:19.061 +00:00 [INF] Executed action AuthController.Login (Secure Web CA2) in 6435.3844ms
+2025-12-14 17:34:19.066 +00:00 [INF] Executed endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:34:19.081 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/auth/login - 200 null application/json; charset=utf-8 6514.4145ms
+2025-12-14 17:34:37.110 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/auth/login - null null
+2025-12-14 17:34:37.118 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:34:37.120 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/auth/login - 204 null null 10.1239ms
+2025-12-14 17:34:37.124 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/auth/login - application/json 42
+2025-12-14 17:34:37.134 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:34:37.208 +00:00 [INF] Executing endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:34:37.218 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthController (Secure Web CA2).
+2025-12-14 17:34:37.279 +00:00 [INF] Executed DbCommand (12ms) [Parameters=[@__login_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__login_Username_0
+LIMIT 1
+2025-12-14 17:34:41.347 +00:00 [INF] User logged in successfully: admin
+2025-12-14 17:34:41.352 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-14 17:34:41.355 +00:00 [INF] Executed action AuthController.Login (Secure Web CA2) in 4133.9289ms
+2025-12-14 17:34:41.358 +00:00 [INF] Executed endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:34:41.359 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/auth/login - 200 null application/json; charset=utf-8 4236.6489ms
+2025-12-14 17:34:41.363 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:34:41.376 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:34:41.378 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 15.2848ms
+2025-12-14 17:34:41.382 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/passengers - application/json 182
+2025-12-14 17:34:41.397 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:34:41.408 +00:00 [INF] Executing endpoint 'PassengersController.Create (Secure Web CA2)'
+2025-12-14 17:34:41.418 +00:00 [INF] Route matched with {action = "Create", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Passenger) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:34:41.518 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE (`u`.`Username` = @__username_0) AND (`u`.`Role` = 'Admin')
+LIMIT 1
+2025-12-14 17:34:41.636 +00:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Date), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Passengers` (`ArrivalDate`, `ArrivalYear`, `FullName`, `Nationality`, `OfficerId`, `PassportNumber`, `PurposeOfVisit`, `VisaType`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT `PassengerId`
+FROM `Passengers`
+WHERE ROW_COUNT() = 1 AND `PassengerId` = LAST_INSERT_ID();
+2025-12-14 17:34:41.668 +00:00 [INF] Passenger created: 41, FullName: balu gundameedi
+2025-12-14 17:34:41.670 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:34:41.673 +00:00 [INF] Executed action PassengersController.Create (Secure Web CA2) in 252.1047ms
+2025-12-14 17:34:41.676 +00:00 [INF] Executed endpoint 'PassengersController.Create (Secure Web CA2)'
+2025-12-14 17:34:41.678 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 296.7863ms
+2025-12-14 17:34:47.027 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:34:47.035 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:34:47.037 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 9.5866ms
+2025-12-14 17:34:47.041 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers - null null
+2025-12-14 17:34:47.051 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:34:47.058 +00:00 [INF] Executing endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:34:47.066 +00:00 [INF] Route matched with {action = "GetAll", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PassengersController (Secure Web CA2).
+2025-12-14 17:34:47.106 +00:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+2025-12-14 17:34:47.117 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Passenger, Secure Web CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-14 17:34:47.121 +00:00 [INF] Executed action PassengersController.GetAll (Secure Web CA2) in 51.9949ms
+2025-12-14 17:34:47.125 +00:00 [INF] Executed endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:34:47.127 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 86.3168ms
+2025-12-14 17:34:57.525 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers/41 - null null
+2025-12-14 17:34:57.541 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:34:57.543 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers/41 - 204 null null 19.0168ms
+2025-12-14 17:34:57.546 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers/41 - null null
+2025-12-14 17:34:57.558 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:34:57.561 +00:00 [INF] Executing endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:34:57.569 +00:00 [INF] Route matched with {action = "Get", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:34:57.627 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:34:57.633 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:34:57.635 +00:00 [INF] Executed action PassengersController.Get (Secure Web CA2) in 58.2339ms
+2025-12-14 17:34:57.640 +00:00 [INF] Executed endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:34:57.643 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers/41 - 200 null application/json; charset=utf-8 96.3537ms
+2025-12-14 17:35:07.238 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers/41 - null null
+2025-12-14 17:35:07.262 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:07.263 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers/41 - 204 null null 25.3123ms
+2025-12-14 17:35:07.267 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers/41 - null null
+2025-12-14 17:35:07.281 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:07.283 +00:00 [INF] Executing endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:35:07.290 +00:00 [INF] Route matched with {action = "Get", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:35:07.319 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:35:07.327 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:35:07.330 +00:00 [INF] Executed action PassengersController.Get (Secure Web CA2) in 36.6248ms
+2025-12-14 17:35:07.334 +00:00 [INF] Executed endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:35:07.336 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers/41 - 200 null application/json; charset=utf-8 69.7743ms
+2025-12-14 17:35:09.891 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers/41 - null null
+2025-12-14 17:35:09.897 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:09.900 +00:00 [INF] Executing endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:35:09.902 +00:00 [INF] Route matched with {action = "Get", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:35:09.935 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:35:09.942 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:35:09.945 +00:00 [INF] Executed action PassengersController.Get (Secure Web CA2) in 37.8497ms
+2025-12-14 17:35:09.948 +00:00 [INF] Executed endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:35:09.950 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers/41 - 200 null application/json; charset=utf-8 59.293ms
+2025-12-14 17:35:20.346 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/auth/login - null null
+2025-12-14 17:35:20.360 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:20.361 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/auth/login - 204 null null 15.5262ms
+2025-12-14 17:35:20.363 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/auth/login - application/json 42
+2025-12-14 17:35:20.383 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:20.385 +00:00 [INF] Executing endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:35:20.387 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthController (Secure Web CA2).
+2025-12-14 17:35:20.418 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__login_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__login_Username_0
+LIMIT 1
+2025-12-14 17:35:24.558 +00:00 [INF] User logged in successfully: admin
+2025-12-14 17:35:24.563 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-14 17:35:24.564 +00:00 [INF] Executed action AuthController.Login (Secure Web CA2) in 4171.2284ms
+2025-12-14 17:35:24.565 +00:00 [INF] Executed endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:35:24.565 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/auth/login - 200 null application/json; charset=utf-8 4202.5249ms
+2025-12-14 17:35:24.585 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers/41 - null null
+2025-12-14 17:35:24.596 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:24.598 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers/41 - 204 null null 13.2483ms
+2025-12-14 17:35:24.603 +00:00 [INF] Request starting HTTP/2 PUT https://localhost:7255/api/passengers/41 - application/json 181
+2025-12-14 17:35:24.631 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:24.637 +00:00 [INF] Executing endpoint 'PassengersController.Update (Secure Web CA2)'
+2025-12-14 17:35:24.652 +00:00 [INF] Route matched with {action = "Update", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, Passenger) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:35:24.686 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE (`u`.`Username` = @__username_0) AND (`u`.`Role` = 'Admin')
+LIMIT 1
+2025-12-14 17:35:24.709 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@p8='?' (DbType = Int32), @p0='?' (DbType = Date), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Passengers` SET `ArrivalDate` = @p0, `ArrivalYear` = @p1, `FullName` = @p2, `Nationality` = @p3, `OfficerId` = @p4, `PassportNumber` = @p5, `PurposeOfVisit` = @p6, `VisaType` = @p7
+WHERE `PassengerId` = @p8;
+SELECT ROW_COUNT();
+2025-12-14 17:35:24.717 +00:00 [INF] Passenger updated: 41, FullName: balu gundameedi
+2025-12-14 17:35:24.720 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:35:24.722 +00:00 [INF] Executed action PassengersController.Update (Secure Web CA2) in 58.62ms
+2025-12-14 17:35:24.724 +00:00 [INF] Executed endpoint 'PassengersController.Update (Secure Web CA2)'
+2025-12-14 17:35:24.725 +00:00 [INF] Request finished HTTP/2 PUT https://localhost:7255/api/passengers/41 - 200 null application/json; charset=utf-8 123.2574ms
+2025-12-14 17:35:28.009 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers/41 - null null
+2025-12-14 17:35:28.018 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:28.020 +00:00 [INF] Executing endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:35:28.023 +00:00 [INF] Route matched with {action = "Get", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:35:28.054 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:35:28.126 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:35:28.128 +00:00 [INF] Executed action PassengersController.Get (Secure Web CA2) in 99.9815ms
+2025-12-14 17:35:28.130 +00:00 [INF] Executed endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:35:28.131 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers/41 - 200 null application/json; charset=utf-8 123.7761ms
+2025-12-14 17:35:31.061 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:35:31.068 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:31.070 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 9.2859ms
+2025-12-14 17:35:31.074 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers - null null
+2025-12-14 17:35:31.099 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:31.102 +00:00 [INF] Executing endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:35:31.118 +00:00 [INF] Route matched with {action = "GetAll", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PassengersController (Secure Web CA2).
+2025-12-14 17:35:31.160 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+2025-12-14 17:35:31.164 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Passenger, Secure Web CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-14 17:35:31.165 +00:00 [INF] Executed action PassengersController.GetAll (Secure Web CA2) in 25.7158ms
+2025-12-14 17:35:31.168 +00:00 [INF] Executed endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:35:31.170 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 96.6349ms
+2025-12-14 17:35:46.386 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:35:46.406 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:46.408 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 21.4429ms
+2025-12-14 17:35:46.411 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers - null null
+2025-12-14 17:35:46.448 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:35:46.450 +00:00 [INF] Executing endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:35:46.452 +00:00 [INF] Route matched with {action = "GetAll", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PassengersController (Secure Web CA2).
+2025-12-14 17:35:46.482 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+2025-12-14 17:35:46.489 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Passenger, Secure Web CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-14 17:35:46.492 +00:00 [INF] Executed action PassengersController.GetAll (Secure Web CA2) in 33.7057ms
+2025-12-14 17:35:46.495 +00:00 [INF] Executed endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:35:46.497 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 86.073ms
+2025-12-14 17:36:10.395 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/auth/login - null null
+2025-12-14 17:36:10.403 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:10.404 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/auth/login - 204 null null 8.9198ms
+2025-12-14 17:36:10.422 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/auth/login - application/json 42
+2025-12-14 17:36:10.430 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:10.434 +00:00 [INF] Executing endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:36:10.436 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthController (Secure Web CA2).
+2025-12-14 17:36:10.469 +00:00 [INF] Executed DbCommand (9ms) [Parameters=[@__login_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__login_Username_0
+LIMIT 1
+2025-12-14 17:36:13.339 +00:00 [INF] User logged in successfully: admin
+2025-12-14 17:36:13.342 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-14 17:36:13.344 +00:00 [INF] Executed action AuthController.Login (Secure Web CA2) in 2901.1138ms
+2025-12-14 17:36:13.349 +00:00 [INF] Executed endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:36:13.351 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/auth/login - 200 null application/json; charset=utf-8 2929.4929ms
+2025-12-14 17:36:13.379 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers/21 - null null
+2025-12-14 17:36:13.387 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:13.391 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers/21 - 204 null null 11.6791ms
+2025-12-14 17:36:13.394 +00:00 [INF] Request starting HTTP/2 DELETE https://localhost:7255/api/passengers/21 - null null
+2025-12-14 17:36:13.402 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:13.407 +00:00 [INF] Executing endpoint 'PassengersController.Delete (Secure Web CA2)'
+2025-12-14 17:36:13.416 +00:00 [INF] Route matched with {action = "Delete", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:36:13.451 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE (`u`.`Username` = @__username_0) AND (`u`.`Role` = 'Admin')
+LIMIT 1
+2025-12-14 17:36:13.470 +00:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:36:13.490 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+DELETE FROM `Passengers`
+WHERE `PassengerId` = @p0;
+SELECT ROW_COUNT();
+2025-12-14 17:36:13.503 +00:00 [INF] Passenger deleted: 21, FullName: balu gundameedi
+2025-12-14 17:36:13.513 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-12-14 17:36:13.516 +00:00 [INF] Executed action PassengersController.Delete (Secure Web CA2) in 95.8068ms
+2025-12-14 17:36:13.518 +00:00 [INF] Executed endpoint 'PassengersController.Delete (Secure Web CA2)'
+2025-12-14 17:36:13.521 +00:00 [INF] Request finished HTTP/2 DELETE https://localhost:7255/api/passengers/21 - 200 0 null 126.8158ms
+2025-12-14 17:36:19.181 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:36:19.185 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:19.187 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 6.3739ms
+2025-12-14 17:36:19.191 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers - null null
+2025-12-14 17:36:19.211 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:19.213 +00:00 [INF] Executing endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:36:19.215 +00:00 [INF] Route matched with {action = "GetAll", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PassengersController (Secure Web CA2).
+2025-12-14 17:36:19.240 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+2025-12-14 17:36:19.254 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Passenger, Secure Web CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-14 17:36:19.258 +00:00 [INF] Executed action PassengersController.GetAll (Secure Web CA2) in 39.4763ms
+2025-12-14 17:36:19.279 +00:00 [INF] Executed endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:36:19.281 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 90.1441ms
+2025-12-14 17:36:31.380 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/auth/login - null null
+2025-12-14 17:36:31.389 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:31.391 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/auth/login - 204 null null 10.916ms
+2025-12-14 17:36:31.395 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7255/api/auth/login - application/json 40
+2025-12-14 17:36:31.414 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:31.415 +00:00 [INF] Executing endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:36:31.418 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthController (Secure Web CA2).
+2025-12-14 17:36:31.444 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__login_Username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`PasswordHash`, `u`.`Role`, `u`.`Username`
+FROM `Users` AS `u`
+WHERE `u`.`Username` = @__login_Username_0
+LIMIT 1
+2025-12-14 17:36:34.915 +00:00 [INF] User logged in successfully: user
+2025-12-14 17:36:34.919 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-14 17:36:34.922 +00:00 [INF] Executed action AuthController.Login (Secure Web CA2) in 3501.3489ms
+2025-12-14 17:36:34.924 +00:00 [INF] Executed endpoint 'AuthController.Login (Secure Web CA2)'
+2025-12-14 17:36:34.926 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7255/api/auth/login - 200 null application/json; charset=utf-8 3531.0379ms
+2025-12-14 17:36:39.143 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers - null null
+2025-12-14 17:36:39.147 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:39.149 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers - 204 null null 5.9456ms
+2025-12-14 17:36:39.151 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers - null null
+2025-12-14 17:36:39.162 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:39.164 +00:00 [INF] Executing endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:36:39.167 +00:00 [INF] Route matched with {action = "GetAll", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PassengersController (Secure Web CA2).
+2025-12-14 17:36:39.188 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+2025-12-14 17:36:39.192 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Passenger, Secure Web CA2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-14 17:36:39.193 +00:00 [INF] Executed action PassengersController.GetAll (Secure Web CA2) in 22.6991ms
+2025-12-14 17:36:39.195 +00:00 [INF] Executed endpoint 'PassengersController.GetAll (Secure Web CA2)'
+2025-12-14 17:36:39.196 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers - 200 null application/json; charset=utf-8 45.331ms
+2025-12-14 17:36:46.009 +00:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7255/api/passengers/20 - null null
+2025-12-14 17:36:46.016 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:46.019 +00:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7255/api/passengers/20 - 204 null null 9.3712ms
+2025-12-14 17:36:46.023 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7255/api/passengers/20 - null null
+2025-12-14 17:36:46.044 +00:00 [INF] CORS policy execution successful.
+2025-12-14 17:36:46.046 +00:00 [INF] Executing endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:36:46.048 +00:00 [INF] Route matched with {action = "Get", controller = "Passengers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller PassengersController (Secure Web CA2).
+2025-12-14 17:36:46.074 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`PassengerId`, `p`.`ArrivalDate`, `p`.`ArrivalYear`, `p`.`FullName`, `p`.`Nationality`, `p`.`OfficerId`, `p`.`PassportNumber`, `p`.`PurposeOfVisit`, `p`.`VisaType`
+FROM `Passengers` AS `p`
+WHERE `p`.`PassengerId` = @__p_0
+LIMIT 1
+2025-12-14 17:36:46.101 +00:00 [INF] Executing OkObjectResult, writing value of type 'Passenger'.
+2025-12-14 17:36:46.104 +00:00 [INF] Executed action PassengersController.Get (Secure Web CA2) in 52.9376ms
+2025-12-14 17:36:46.129 +00:00 [INF] Executed endpoint 'PassengersController.Get (Secure Web CA2)'
+2025-12-14 17:36:46.130 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7255/api/passengers/20 - 200 null application/json; charset=utf-8 106.8663ms

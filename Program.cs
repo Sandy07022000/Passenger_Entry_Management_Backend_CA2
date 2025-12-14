@@ -34,17 +34,26 @@ builder.Services.AddCors(options =>
     });
 });
 
-// EF Core MySQL connection
-builder.Services.AddDbContext<MyDbContext>(options =>
-    options.UseMySql(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
-    ));
+var configuration = builder.Configuration;
 
-// --- Cryptographic Hardening ---
-// Validate JWT key strength
-var jwtKey = builder.Configuration["Jwt:Key"]
-             ?? throw new InvalidOperationException("JWT Key missing!");
+// --- Secure Database Configuration ---
+var dbPassword = Environment.GetEnvironmentVariable("DB_PASSWORD")
+                 ?? throw new InvalidOperationException("Database password environment variable missing!");
+
+var connectionString = $"server={configuration["Database:Server"]};" +
+                       $"port={configuration["Database:Port"]};" +
+                       $"database={configuration["Database:Name"]};" +
+                       $"user={configuration["Database:User"]};" +
+                       $"password={dbPassword}";
+
+builder.Services.AddDbContext<MyDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
+);
+
+// --- Secure JWT Configuration ---
+var jwtKey = Environment.GetEnvironmentVariable("JWT_KEY")
+             ?? throw new InvalidOperationException("JWT Key environment variable missing!");
+
 var keyBytes = Encoding.UTF8.GetBytes(jwtKey);
 if (keyBytes.Length < 32)
 {
@@ -65,9 +74,10 @@ builder.Services.AddAuthentication(options =>
         ValidateIssuer = true,
         ValidateAudience = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-        ValidAudience = builder.Configuration["Jwt:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(keyBytes)
+        ValidIssuer = configuration["Jwt:Issuer"],
+        ValidAudience = configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(keyBytes),
+        ClockSkew = TimeSpan.Zero 
     };
 });
 
